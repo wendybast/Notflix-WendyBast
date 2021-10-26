@@ -1,29 +1,72 @@
-@media screen and (max-width: 640px) {
 
-    .menu {
-    
-    background:rgb(235, 22, 6); ;
-    
+    *{
+        margin: 0;
+        padding:o;
     }
     
+    html{
+        background: gray;
+    }
+
+    body{
+        width: 1200px;
+        height: 1000px;
+        background-color:rgb(240, 234, 234);
+        margin: 0.5em auto;
+        padding: 0.5em;
+   
+    }
+
+    header{
+        height: 20%;
+        background: red;
+        border-top-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+        margin: 0.5em;
+
+    }
+
+    nav{
+        height: 10%;
+        background: #141414;
+        margin: 0.5em;
+        border-radius: 1em;
+    }
+
+    main{
+        height: 50%;
+        background:rgb(15, 15, 15);
+        border-radius: 1em;
+        margin: 0.5em;
+    
+    }
+    footer{
+        height: 15%;
+        background: black;
+        border-radius: 0.5em;
+        margin: 0.5em;
     }
     
-     
-    
-    @media screen and (min-width: 640px) and (max-width: 1280px) {
-    
-    .menu { background: red;
-    
+    #portada {
+        height: 95%;
+        width: 65%;
+        background: red;
+        border-radius: 0.5em;
+        margin: 1em;
+        float: left;
+        
+    }
+    #barra{
+        height: 95%;
+        width: 28%;
+        background: red;
+        border-radius: 0.5em;
+        border-color: seashell;
+        margin:1em;
+        float: right;
+
     }
     
-    }
     
-     
-    
-    @media screen and (min-width: 1280px) {
-    
-    .menu { background: rgb(235, 22, 6);
-    
-    }
-    
-    }
+   
+
