@@ -1,7 +1,8 @@
 
     *{
         margin: 0;
-        padding:o;
+        padding:0;
+        box-sizing: border-box;
     }
     
     html{
@@ -9,20 +10,23 @@
     }
 
     body{
-        width: 1200px;
+        width: 1300px;
         height: 1000px;
-        background-color:rgb(240, 234, 234);
-        margin: 0.5em auto;
-        padding: 0.5em;
+        background-color:#e51414;
+        margin: 0.5em auto
+        padding: 0,5em
+        
    
     }
 
     header{
         height: 20%;
-        background: red;
+        background: #e51414;
         border-top-right-radius: 1em;
         border-bottom-left-radius: 1em;
         margin: 0.5em;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 120px;
 
     }
 
@@ -31,7 +35,10 @@
         background: #141414;
         margin: 0.5em;
         border-radius: 1em;
+        font-family: sans-serif;
+
     }
+   
 
     main{
         height: 50%;
