@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: #e51414;
 }
@@ -26,6 +26,7 @@ header {
     border-bottom-left-radius: 2em;
     border-top-right-radius: 2em;
     font-family: 'Catamaran', sans-serif;
+    
 }
 .logo{
     font-size: 5rem;
@@ -33,30 +34,44 @@ header {
 }
 
 nav {
-    height: 10vh;
-    background: black;
-    border-radius: 1em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    display: inline-block;
+     width: 100%;
+        max-width: 1250px;
+    margin: 0 auto;
+
 }
+.principal-nav{
+        display: inline-block;
+        background: rgb(216, 15, 15);
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+}
+
 
 nav ul {
     padding: 10px;
-    list-style-type: none;
     display: inline-block;
+    
+    
+    
 }
 
 nav ul li {
-    padding: 5px;
     display: inline-block;
+    padding: 5px;
+    background: black;
+    
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    display: inline-block;
+    display:inline-block;
     padding: 10px;
     border-radius: 1em;
+    
+    
 }
 nav ul li a:hover{
     background-color: red;
@@ -180,62 +195,58 @@ main {
         height: 100%;
         object-fit:cover;
     } 
-    
-    header{
-         padding: 5vh;
-        display: flex;
-        background: black;  
-        color: ivory;
-        margin : 0.5em;
-     }
 
-    header h1{
-        font-family: sans-serif;
-        color: white;
-        text-align: left;
+    .header-peli{
+        padding:  0;
+        background: red;
+        color: #fff;
+        margin: 0.5em;
 
+            
     }
-    header.peli{
-        display:block;
-        width:95%;
-        justify-content:safe;
-        
-      
-    }
-    nav.chart{ 
-        padding: 5px;
-        display: flex;
-        
-      }
-    nav.chart ul{ 
-        padding: 10px;
-        min-height:5vh;
-        list-style-type: none;
+    .contenedor{
         display: inline-block;
-     
-}
+        width: 100%;
+        max-width: 1250px;
+        margin: 0, auto;
+        color: ivory;
+        border-radius: 0;
+    }
 
-    nav.chart ul li a{
-        background: #e51414;
-        display: in;
+    .botones-nav{
+        display: inline-block;
+        background: rgb(216, 15, 15);
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+
+    
+    }
+    .chart{
+        width: 100%;
+    
+    }
+    .chart ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: space-around;
+        background: none;
+    
+    }
+
+    .chart ul li{
+        display: inline-block;
         
     }
-  
-    #menu{
-        font-family: sans-serif;
-        display:table-row;
+    .chart ul li a {
+        display: inline-block;
+        padding: 0.5rem 1rem; 
+        transition: all 0;
         
     }
-     #menu ul{
-         min-width: 95%;;
-         display: inline-flex;
-         padding: 10px;
-        justify-content: center;
-     }
 
-    nav ul li {
-        text-decoration: none;
-    }
+
     
     @media screen and (max-width: 640px) {
         .peliculas{
@@ -243,12 +254,29 @@ main {
             grid-template-columns: 100%;
         
         }
-        nav.chart{
-            display: inline-block;
-        }
 
+        .chart ul li{
+            display:block;
+        }
+        
+        nav ul {
+            padding: 10px;
+            display: block;
+        }
+            .principal-nav{
+                display: block;
+                background: rgb(216, 15, 15);
+                justify-content: space-between;
+                align-items:center;
+                flex-wrap: wrap;
                    
     }
+        nav ul li {
+        display: block;
+        padding: 5px;
+        background: black;
+    }
+}
 
 
     @media screen and (min-width: 748px) {
@@ -256,6 +284,8 @@ main {
             display: grid;
             grid-template-columns:33% 33% 33%;
         }
+       
+
     }
     @media screen and (min-width: 1280px){
         .peliculas{
@@ -263,4 +293,3 @@ main {
             grid-template-columns: 25% 25% 25% 25%;
 
         }
-    }
