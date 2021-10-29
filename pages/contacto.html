@@ -14,22 +14,23 @@
 
 <body>
     <div id="Contacto"> </div>
-    <h1>Contacto</h1>
+    <h1>Contáctanos</h1>
+    <p>Mandanos tus preguntas y preferencias para seguir mejorando nuestra plataforma.</p>
     <br>
     <br>
 
     <div id="message">
-        <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
+        <form class="form-contacto" action="https://www.w3schools.com/action_page.php" method="post" enctype="text/plain">
             <fieldset>
                 <br>
-                Nombre: <input type="text" name="nombre" value="Juan Perez" size="30" maxlength="100">
+               <label for="fname">Nombre</label>
+                <input type="text" name="nombre"placeholder="Juan Perez" size="30" maxlength="100">
                 <br><br>
-                Email: <input type="text" name="email" size="25" maxlength="100" value="@">
+                <label for="email">Email:</label> 
+                <input type="email" name="email" size="25" maxlength="100" required>
                 <br><br>
-                Mensaje:
-                <br><br>
-                <textarea name="comentario" rows="10" cols="40"></textarea>
-                <br><br>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="coment" id="comentId" cols="40" rows="10"></textarea><br><br>
                 <input type="submit" value="Enviar">
                 <br>
             </fieldset>

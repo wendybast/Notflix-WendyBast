@@ -257,6 +257,16 @@ main {
     
 }
 
+/* -------------registro-------------  */
+.form-registro{
+
+}
+
+.form-contacto{
+    
+}
+
+
     
     @media screen and (max-width: 640px) {
         .peliculas{
@@ -303,3 +313,4 @@ main {
             grid-template-columns: 25% 25% 25% 25%;
 
         }
+    }
