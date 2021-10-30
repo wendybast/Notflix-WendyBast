@@ -8,20 +8,37 @@
     <link rel="icon" href="/assets/ico/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Catamaran&display=swap" rel="stylesheet">
-    
-    <script src="https://kit.fontawesome.com/3d0b3255e0.js" crossorigin="anonymous"></script><title>Document</title>
+
+    <script src="https://kit.fontawesome.com/3d0b3255e0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 
 <body>
     <h1>Trailers</h1>
     <br>
     <div class="reproductor">
-        <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/An_NsOddM3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   
-  
-</div>
+        <iframe class="responsivo" id="film" src=""
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-    <a href="/index.html">Home</a>
+
+    </div>
+
+    <div class="inicio-player">
+        <a href="/index.html">Home</a>
+    </div>
+
+
+    <script>
+        var search = windows.location.search;
+        var parametros = new URLSearchParams(search)
+        var movie = parametros.get('movies');
+
+        var elemento = document.getElementById('film');
+        elemento.src = 'https://www.youtube.com/embed/' + movie;
+
+    </script>
 
 </body>
 
