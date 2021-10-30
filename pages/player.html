@@ -16,22 +16,24 @@
 <body>
     <h1>Trailers</h1>
     <br>
+
+    <header>
+        <div class="inicio-player">
+            <a href="/index.html">Home</a>
+        </div>
+    </header>
     <div class="reproductor">
         <iframe class="responsivo" id="film" src=""
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-
-
     </div>
 
-    <div class="inicio-player">
-        <a href="/index.html">Home</a>
-    </div>
+    
 
 
     <script>
-        var search = windows.location.search;
+        var search = window.location.search;
         var parametros = new URLSearchParams(search)
         var movie = parametros.get('movies');
 
